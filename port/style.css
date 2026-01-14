@@ -1,0 +1,100 @@
+:root {
+    --main: #2563eb;
+    --bg: #ffffff;
+    --text: #1f2937;
+}
+
+.dark-theme {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+}
+
+body {
+    background-image: url('https://wallpapercave.com/wp/wp2903050.jpg');
+
+}
+
+.navbar, footer {
+    background: var(--main);
+}
+
+.hero-section {
+    padding: 120px 0 80px;
+}
+
+.hero-img {
+    width: 260px;
+    border-radius: 20%;
+    border: 6px solid var(--main);
+    transition: 0.4s;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
+}
+
+.highlight {
+    color: var(--main);
+}
+
+.btn-main {
+    background: var(--main);
+    color: white;
+}
+
+.social {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main);
+    transition: 0.3s;
+}
+
+.social:hover {
+    background: var(--main);
+    color: white;
+    transform: translateY(-4px);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.skill-card, .project-card {
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-8px);
+}
+
+.badge {
+    background: var(--main);
+    margin: 3px;
+}
+
+.bg-soft {
+    background: #f1f5f9;
+}
+
+.dark-theme .bg-soft {
+    background: #1e293b;
+}
+
+/* Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
